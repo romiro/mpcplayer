@@ -1,0 +1,308 @@
+body {
+    font-family:"Trebuchet MS", Tahoma, Verdana, sans-serif;
+    padding:0;
+    margin:0;
+    background:#fefefe;
+    font-size:12px;
+}
+body * {
+    font-family:"Trebuchet MS", Tahoma, Verdana, sans-serif;
+}
+a img {
+    border:none;
+}
+a {
+    color:#0066B3;
+}
+a:hover {
+    color:#FF3300;
+}
+
+#Notice {
+    line-height:150%;
+    padding:0 10px;
+    margin:3px 5px;
+    border:1px solid #CCCCCC;
+    background:#FFFFCC;
+    font-size:120%;
+}
+#ResetPositions {
+    position:absolute;
+    top:0;
+    right:3px;
+    font-size:10px;
+}
+#container {
+    min-height:400px;
+}
+#footer {
+    text-align:center;
+    font-size:10px;
+    margin:1em 0 0;
+}
+
+.floatBox {
+    margin:0.5em;
+    border:2px solid #BBBBBB;
+    min-width:200px;
+    float:left;
+    background-color:white;
+}
+.floatBoxContent {
+    padding:0 5px 5px;
+}
+.floatBoxHeader {
+    margin:0 0 6px;
+    min-width:200px;
+    padding:3px 0;
+    border-bottom:1px solid #BBBBBB;
+    color:#444;
+    background:#DDD;
+    cursor:move;
+}
+.floatBoxHeader img.toggle {
+    vertical-align:bottom;
+    cursor:pointer;
+}
+
+
+#FileList {
+    float:left;
+    margin-left:30px;
+}
+#FileList .item {}
+#FileList .item img {
+    vertical-align:top;
+}
+#FileList .item a {
+    text-decoration:none;
+    display:block;
+}
+#FileList .item:hover {
+    background-color:#DDDDDD;
+    color:#FF3300!important;
+}
+#FileList .file {
+    padding-right:20px;
+    position:relative;
+    cursor:alias;
+}
+#FileList .file.active {
+    background-color:#FF9174;
+}
+#FileList img.AddFileToPlaylist {
+    position:absolute;
+    right:0;
+}
+#FileListActions,
+#PlaylistActions {
+    font-size:11px;
+    margin-top:1em;
+    padding:3px 4px;
+    border-top:1px solid #BBB;
+    background:#F4F4F4;
+}
+
+
+#Playlist {
+    clear:left;
+    position:relative;
+    min-width:350px;
+}
+#PlaylistOptions {
+    position:absolute;
+    left:-2px;
+    border:2px dashed #BBB;
+    border-top:none;
+    background:#F4F4F4;
+    font-size:11px;
+}
+#PlaylistOptions .content {
+    padding:10px 6px;
+}
+#PlaylistOptions .buttons {
+    padding:5px 0;
+}
+#PlaylistOptions label {
+    display:block;
+    font-weight:bold;
+}
+#PlaylistOptions button.button {
+    margin:2px;
+    width:105px;
+}
+#LoadPlaylistName {
+    width:250px;
+}
+
+
+#Playlist table {
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+#Playlist .trackRow.even td {
+    background-color:#F3F3F3;
+}
+#Playlist .trackRow.odd td {
+    background-color:#FFFFFF;
+}
+#Playlist .trackRow td {
+    padding:0.2em 0.4em;
+    cursor:default;
+}
+#Playlist .trackRow .action img {
+    vertical-align:middle;
+    cursor:pointer;
+}
+#Playlist table tr:hover td {
+    background-color:#5189B3!important;
+    color:white!important;
+}
+#Playlist .trackRow.playing td {
+    background-color:#66FF66;
+}
+#Playlist .trackRow.deleting td {
+    background-color:red!important;
+}
+#Playlist select.trackChange,
+#Playlist select.trackChange option {
+    font-size:10px;
+    padding:0;
+}
+#Playlist select.trackChange{
+    border:1px solid #BBB;
+}
+#Playlist select.trackChange option {
+    padding:0 3px;
+}
+#Playlist tr.hidden {
+    display:none;
+}
+
+
+#ControlPanel {
+    float:left;
+    width:700px;
+    position:relative;
+}
+#ControlPanel .floatBoxHeader {
+    margin:0;
+}
+
+
+#NowPlaying {
+    float:left;
+}
+#NowPlaying .currentTrack {
+}
+#NowPlaying .artist {
+    color:#566B1B;
+}
+#NowPlaying .title {
+    color:#1B2E6B;
+}
+#NowPlaying .album {
+    color:#566B1B;
+}
+#NowPlaying label {
+    float:left;
+    clear:left;
+    width:50px;
+    padding-right:10px;
+    text-align:right;
+}
+#NowPlaying .currentTrack span {
+    float:left;
+}
+
+#SeekBar,
+#ControlButtons,
+#PlayStatus {
+    float:right;
+    margin-top:8px;
+    text-align:center;
+}
+#SeekBar {
+    width:200px;
+    height:15px;
+    background:#F5F5F5;
+    border:1px solid #E1E1E1;
+    position:relative;
+}
+#SeekBarMeter {
+    width:0px;
+    height:15px;
+    background:#0066B3;
+}
+
+#TrackTime {
+    position:absolute;
+    width:200px;
+    font-size:10px;
+    text-align:center;
+    cursor:default;
+}
+#TrackTime span.sep {
+    padding:0 5px;
+}
+
+#ControlButtons {
+    padding:0 8px;
+}
+
+#PlayStatus {
+    font-size:11px;
+    font-weight:bold;
+    color:#0066B3;
+}
+
+#Volume {
+    position:absolute;
+    bottom:1px;
+    right:1px;
+}
+#Volume .icon {
+    float:left;
+    padding-top:6px;
+}
+#VolumeBar {
+    position:relative;
+    width:100px;
+    height:18px;
+    float:left;
+}
+#VolumeSlider {
+    height:18px;
+    width:100px;
+    adding:0 5px;
+    background:url('/img/volume.png') no-repeat;
+}
+#VolumeHandle {
+    position:absolute;
+    height:18px;
+    width:10px;
+    background:#0066B3;
+    z-index:50;
+    opacity:0.75;
+}
+#VolumeLabel {
+    float:left;
+    width:25px;
+    font-size:10px;
+    text-align:center;
+}
+
+
+button.button {
+    background-color:#EFEFEF;
+    border:1px solid #AAA;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+button.button img {
+    vertical-align:top;
+}
+
+img.button {
+    cursor:pointer;
+}

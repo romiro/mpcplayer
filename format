@@ -1,0 +1,2 @@
+#! /bin/bash
+mpc playlist --format '{"artist":"%artist%","album":"%album%","title":"%title%|%file%","track":"%track%","time":"%time%"} playlist'
